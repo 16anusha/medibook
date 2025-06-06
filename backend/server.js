@@ -6,7 +6,7 @@ const bookingRoutes = require('./routes/bookings');
 const authRoutes = require('./routes/auth');  // ✅ Add this import
 const authMiddleware = require('./middleware/authMiddleware')
 const adminRoutes = require('./routes/admin');
-
+require('dotenv').config();
 
 const app = express();
 app.use(cors());
